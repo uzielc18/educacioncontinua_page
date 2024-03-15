@@ -11,6 +11,7 @@ module.exports = {
 
         // COLORS HOVER UPeU
         'hellow-hover': '#C68500',
+        'blue-hover': '#002949',
       },
       fontFamily: {
         montserrat: ['Montserrat'],
