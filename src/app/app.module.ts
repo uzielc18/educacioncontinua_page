@@ -14,16 +14,15 @@ import { HomePageComponent } from './modules/home/home-page.components';
 import { SwiperCarrusel } from './shared/components/carrusel-swiper/carrusel-swiper.components';
 import { CourseContainer } from './shared/components/containers/course-container/course-container.components';
 import { FooterComponent } from './shared/components/footer/footer.components';
+import { ListOfCoursesComponent } from './modules/list-courses/list-courses.components';
+import { NewsPage } from './modules/home/pages/news/news-page.components';
 
 // SWIPER JS
 register();
 //
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    HomePageComponent,
-  ],
+  declarations: [AppComponent, HomePageComponent, ListOfCoursesComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -36,10 +35,11 @@ register();
     SwiperCarrusel,
     CourseContainer,
     FooterComponent,
+    NewsPage,
     //
   ],
   providers: [],
   bootstrap: [AppComponent],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
 })
-export class AppModule { }
+export class AppModule {}
