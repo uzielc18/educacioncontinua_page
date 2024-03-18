@@ -17,6 +17,7 @@ import { FooterComponent } from './shared/components/footer/footer.components';
 import { ListOfCoursesComponent } from './modules/list-courses/list-courses.components';
 import { NewsPage } from './modules/home/pages/news/news-page.components';
 import { CoursesComponents } from './modules/home/pages/courses/courses.components';
+import { PlataformsComponent } from './modules/home/pages/plataforms/plataforms.components';
 
 // SWIPER JS
 register();
@@ -36,6 +37,7 @@ register();
     SwiperCarrusel,
     CoursesComponents,
     CourseContainer,
+    PlataformsComponent,
     FooterComponent,
     NewsPage,
     //
