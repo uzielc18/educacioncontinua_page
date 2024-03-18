@@ -12,6 +12,11 @@ module.exports = {
         // COLORS HOVER UPeU
         'hellow-hover': '#C68500',
         'blue-hover': '#002949',
+
+        // COLORS EXTRAS
+        'hellow-extra': '#FFE9BA',
+        'red-came-extra': '#861239',
+        'sky-blue-extra': '#008DFF',
       },
       fontFamily: {
         montserrat: ['Montserrat'],

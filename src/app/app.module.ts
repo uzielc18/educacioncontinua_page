@@ -16,6 +16,7 @@ import { CourseContainer } from './shared/components/containers/course-container
 import { FooterComponent } from './shared/components/footer/footer.components';
 import { ListOfCoursesComponent } from './modules/list-courses/list-courses.components';
 import { NewsPage } from './modules/home/pages/news/news-page.components';
+import { CoursesComponents } from './modules/home/pages/courses/courses.components';
 
 // SWIPER JS
 register();
@@ -33,6 +34,7 @@ register();
     //  COMPONENTS STAND ALONE
     HeaderComponent,
     SwiperCarrusel,
+    CoursesComponents,
     CourseContainer,
     FooterComponent,
     NewsPage,
