@@ -1,16 +1,50 @@
-<div class="w-full flex flex-col justify-center items-center pt-6">
-  <div class="w-full flex justify-center items-center text-3xl font-semibold text-blue-primary">
+<div class="w-full flex flex-col justify-center items-center pt-24">
+  <div class="w-full flex justify-center items-center text-5xl font-bold text-blue-primary">
     <span>Noticias</span>
   </div>
-  <div class="w-full grid grid-cols-1 px-5 pt-10
+  <div class="w-full grid grid-cols-1 px-5 pt-16 gap-10 pb-10
     sm:grid-cols-1 sm:px5
     md:grid-cols-1 md:px-10
     lg:grid-cols-2 lg:px-14
-    xl:grid-cols-2 xl:px-20"
+    xl:grid-cols-2 xl:px-32
+    2xl:grid-cols-2 2xl:px-32"
   >
-    <div class="w-full">asd</div>
-    <div class="w-full">asd</div>
-    <div class="w-full">asd</div>
-    <div class="w-full">asd</div>
+    <div class="w-full rounded-xl flex overflow-hidden" *ngFor="let newItem of news">
+      <div class="min-w-[250px] max-w-[260px] h-[250px]">
+        <img class="h-full object-cover" [src]="newItem.image">
+      </div>
+      <div class="w-full p-5 flex flex-1 flex-col border-r border-y border-blue-primary rounded-tr-xl rounded-br-xl">
+        <span class="text-2xl font-semibold text-hellow-primary pb-2">{{newItem.title}}</span>
+        <span class="flex-1">{{newItem.description}}</span>
+        <div class="w-full flex justify-between items-center">
+          <div class="flex items-center justify-center text-gray-400">
+            <svg class="w-5 h-5 fill-gray-400" viewBox="0 0 24 24">
+              <path d="M8.25 5.75C7.84 5.75 7.5 5.41 7.5 5V2C7.5 1.59 7.84 1.25 8.25 1.25C8.66 1.25 9 1.59 9 2V5C9 5.41 8.66 5.75 8.25 5.75Z"/>
+              <path d="M15.75 5.75C15.34 5.75 15 5.41 15 5V2C15 1.59 15.34 1.25 15.75 1.25C16.16 1.25 16.5 1.59 16.5 2V5C16.5 5.41 16.16 5.75 15.75 5.75Z"/>
+              <path d="M11.9996 14.09C12.5196 14.09 12.8996 13.78 12.8996 13.29C12.8996 12.79 12.5196 12.5 11.9996 12.5C11.4796 12.5 11.0996 12.79 11.0996 13.29C11.0996 13.78 11.4796 14.09 11.9996 14.09Z"/>
+              <path d="M11.9994 17.0006C12.629 17.0006 13.1394 16.5842 13.1394 16.0706C13.1394 15.557 12.629 15.1406 11.9994 15.1406C11.3698 15.1406 10.8594 15.557 10.8594 16.0706C10.8594 16.5842 11.3698 17.0006 11.9994 17.0006Z"/>
+              <path d="M19.57 4.5C18.91 4.01 17.96 4.48 17.96 5.31V5.41C17.96 6.58 17.12 7.66 15.95 7.78C14.6 7.92 13.46 6.86 13.46 5.54V4.5C13.46 3.95 13.01 3.5 12.46 3.5H11.54C10.99 3.5 10.54 3.95 10.54 4.5V5.54C10.54 6.33 10.13 7.03 9.51 7.42C9.42 7.48 9.32 7.53 9.22 7.58C9.13 7.63 9.03 7.67 8.92 7.7C8.8 7.74 8.67 7.77 8.53 7.78C8.37 7.8 8.21 7.8 8.05 7.78C7.91 7.77 7.78 7.74 7.66 7.7C7.56 7.67 7.46 7.63 7.36 7.58C7.26 7.53 7.16 7.48 7.07 7.42C6.44 6.98 6.04 6.22 6.04 5.41V5.31C6.04 4.54 5.22 4.08 4.57 4.41C4.56 4.42 4.55 4.42 4.54 4.43C4.5 4.45 4.47 4.47 4.43 4.5C4.4 4.53 4.36 4.55 4.33 4.58C4.05 4.8 3.8 5.05 3.59 5.32C3.48 5.44 3.39 5.57 3.31 5.7C3.3 5.71 3.29 5.72 3.28 5.74C3.19 5.87 3.11 6.02 3.04 6.16C3.02 6.18 3.01 6.19 3.01 6.21C2.95 6.33 2.89 6.45 2.85 6.58C2.82 6.63 2.81 6.67 2.79 6.72C2.73 6.87 2.69 7.02 2.65 7.17C2.61 7.31 2.58 7.46 2.56 7.61C2.54 7.72 2.53 7.83 2.52 7.95C2.51 8.09 2.5 8.23 2.5 8.37V17.13C2.5 19.82 4.68 22 7.37 22H16.63C19.32 22 21.5 19.82 21.5 17.13V8.37C21.5 6.78 20.74 5.39 19.57 4.5ZM12 18.25C10.45 18.25 9.5 17.48 9.5 16.24C9.5 15.56 9.85 14.97 10.46 14.62C10.02 14.31 9.73 13.85 9.73 13.22C9.73 11.92 10.77 11.25 12 11.25C13.23 11.25 14.26 11.92 14.26 13.22C14.26 13.85 13.98 14.31 13.53 14.62C14.15 14.97 14.5 15.56 14.5 16.24C14.5 17.48 13.54 18.25 12 18.25Z"/>
+            </svg>
+            <span class="pl-2 pr-5">{{ newItem.fecha }}</span>
+
+            <svg class="w-5 h-5 fill-gray-400" viewBox="0 0 24 24">
+              <path d="M12 2C6.49 2 2 6.49 2 12C2 17.51 6.49 22 12 22C17.51 22 22 17.51 22 12C22 6.49 17.51 2 12 2ZM16.35 15.57C16.21 15.81 15.96 15.94 15.7 15.94C15.57 15.94 15.44 15.91 15.32 15.83L12.22 13.98C11.45 13.52 10.88 12.51 10.88 11.62V7.52C10.88 7.11 11.22 6.77 11.63 6.77C12.04 6.77 12.38 7.11 12.38 7.52V11.62C12.38 11.98 12.68 12.51 12.99 12.69L16.09 14.54C16.45 14.75 16.57 15.21 16.35 15.57Z"/>
+            </svg>
+            <span class="px-2">{{ newItem.hora }}</span>
+          </div>
+          <span class="cursor-pointer text-blue-hover text-[16px] hover:text-hellow-primary transition-all duration-300">Saber más</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="pt-8 pb-16 flex items-center justify-center">
+    <button class="px-10 py-3 bg-hellow-primary text-white text-xl rounded-md shadow-lg hover:bg-hellow-hover transition-all duration-300 flex items-center justify-center">
+      <span class="pr-5">Ver todas las noticias</span>
+      <svg class="h-6 fill-white" viewBox="0 0 330 330">
+        <path d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
+          s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
+          c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
+      </svg>
+    </button>
   </div>
 </div>

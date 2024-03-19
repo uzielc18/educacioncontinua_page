@@ -18,6 +18,9 @@ import { ListOfCoursesComponent } from './modules/list-courses/list-courses.comp
 import { NewsPage } from './modules/home/pages/news/news-page.components';
 import { CoursesComponents } from './modules/home/pages/courses/courses.components';
 import { PlataformsComponent } from './modules/home/pages/plataforms/plataforms.components';
+import { VideoInstructivoComponent } from './modules/home/pages/video/video-instructivo.components';
+import { SuccessStoriesComponent } from './modules/home/pages/stories/success-stories.components';
+import { EventsComponent } from './modules/home/pages/events/events.components';
 
 // SWIPER JS
 register();
@@ -38,6 +41,9 @@ register();
     CoursesComponents,
     CourseContainer,
     PlataformsComponent,
+    VideoInstructivoComponent,
+    SuccessStoriesComponent,
+    EventsComponent,
     FooterComponent,
     NewsPage,
     //

@@ -10,13 +10,14 @@ module.exports = {
         'hellow-primary': '#F7A701',
 
         // COLORS HOVER UPeU
-        'hellow-hover': '#C68500',
+        'hellow-hover': '#E39900',
         'blue-hover': '#002949',
 
         // COLORS EXTRAS
         'hellow-extra': '#FFE9BA',
         'red-came-extra': '#861239',
         'sky-blue-extra': '#008DFF',
+        'black-extra': '#1E1E1E',
       },
       fontFamily: {
         montserrat: ['Montserrat'],
