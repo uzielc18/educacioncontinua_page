@@ -12,6 +12,7 @@ module.exports = {
         // COLORS HOVER UPeU
         'hellow-hover': '#E39900',
         'blue-hover': '#002949',
+        'sky-blue-hover': '#005EAA',
 
         // COLORS EXTRAS
         'hellow-extra': '#FFE9BA',
