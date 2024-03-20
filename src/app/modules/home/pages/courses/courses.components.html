@@ -1,17 +1,58 @@
-<div class="w-full h-40 flex items-center justify-center">
-  <span>Filters</span>
+<div class="w-full flex items-center justify-center py-10 px-5
+  sm:px-7
+  md:px-10
+  lg:px-16
+  xl:px-32
+  2xl:px-32">
+  <div class="w-full grid grid-cols-1 gap-5
+    sm:grid-cols-1
+    md:grid-cols-2
+    lg:grid-cols-4
+    xl:grid-cols-6
+    2xl:grid-cols-8">
+    <select-component class="col-span-1
+      sm:col-span-1
+      md:col-span-1
+      lg:col-span-2
+      xl:col-span-3
+      2xl:col-span-2"></select-component>
+    <select-component class="col-span-1
+      sm:col-span-1
+      md:col-span-1
+      lg:col-span-2
+      xl:col-span-3
+      2xl:col-span-2"></select-component>
+    <select-component class="col-span-1
+      sm:col-span-1
+      md:col-span-1
+      lg:col-span-3
+      xl:col-span-5
+      2xl:col-span-3"></select-component>
+    <div class="flex items-center justify-center">
+      <button class="w-full px-10 py-2 bg-hellow-primary rounded-lg text-white shadow-lg hover:bg-hellow-hover transition-all duration-300">Filtrar</button>
+    </div>
+  </div>
+  <!-- <div class="pl-5">
+    <button class="w-full px-10 py-2 bg-hellow-primary rounded-lg text-white shadow-lg hover:bg-hellow-hover transition-all duration-300">Filtrar</button>
+  </div> -->
 </div>
 
 <!-- CURSOS RECIEN AGREGADOS -->
-<div class="w-full flex py-5 px-32 items-center">
+<div class="w-full flex py-5 px-5 items-center
+  sm:px-7
+  md:px-10
+  lg:px-16
+  xl:px-24
+  2xl:px-32">
   <span class="flex-1 font-bold text-blue-primary text-2xl">Cursos agregados en los últimos días</span>
   <span class="text-blue-primary cursor-pointer transition-all duration-300 hover:text-hellow-hover">Ver lo mas nuevo</span>
 </div>
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
-  sm:grid-cols-1 sm:px-10
+  sm:grid-cols-1 sm:px-7
   md:grid-cols-2 md:px-10
-  lg:grid-cols-3 lg:px-32
-  xl:grid-cols-4 xl:px-32"
+  lg:grid-cols-3 lg:px-16
+  xl:grid-cols-4 xl:px-24
+  2xl:grid-cols-4 2xl:px-32"
 >
   <div
     class="max-h-[550px] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden"
@@ -54,7 +95,12 @@
     <div class="w-full pt-5 pb-2 flex justify-center line-through text-red-800" *ngIf="courses.price != courses.pricePromotional">
       S/ {{ courses.price.toFixed(2) }}
     </div>
-    <div class="w-full px-20 pb-5 flex justify-center items-center" *ngIf="courses.price != courses.pricePromotional">
+    <div class="w-full px-10 pb-5 flex justify-center items-center
+      sm:px-16
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price != courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>
@@ -63,7 +109,12 @@
         <span class="pl-2">S/ {{courses.pricePromotional.toFixed(2) }}</span>
       </button>
     </div>
-    <div class="w-full pt-5 px-20 pb-5 flex justify-center items-center" *ngIf="courses.price == courses.pricePromotional">
+    <div class="w-full pt-5 px-10 pb-5 flex justify-center items-center
+      sm:px-16
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price == courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>
@@ -92,15 +143,21 @@
 </div>
 
 <!-- CURSOS QUE SE PUBLICARAN PROXIMAMENTE -->
-<div class="w-full flex px-32 py-5 items-center">
+<div class="w-full flex px-5 py-5 items-center
+  sm:px-7
+  md:px-10
+  lg:px-16
+  xl:px-24
+  2xl:px-32">
   <span class="flex-1 font-bold text-blue-primary text-2xl">Próximamente</span>
   <span class="text-blue-primary cursor-pointer transition-all duration-300 hover:text-hellow-hover">Ver próximos cursos</span>
 </div>
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
-  sm:grid-cols-1 sm:px-10
+  sm:grid-cols-1 sm:px-7
   md:grid-cols-2 md:px-10
-  lg:grid-cols-3 lg:px-32
-  xl:grid-cols-4 xl:px-32"
+  lg:grid-cols-3 lg:px-16
+  xl:grid-cols-4 xl:px-24
+  2xl:grid-cols-4 2xl:px-32"
 >
   <div
     class="max-h-[550px] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden"
@@ -143,7 +200,12 @@
     <div class="w-full pt-5 pb-2 flex justify-center line-through text-red-800" *ngIf="courses.price != courses.pricePromotional">
       S/ {{ courses.price.toFixed(2) }}
     </div>
-    <div class="w-full px-20 pb-5 flex justify-center items-center" *ngIf="courses.price != courses.pricePromotional">
+    <div class="w-full px-7 pb-5 flex justify-center items-center
+      sm:px-16
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price != courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>
@@ -152,7 +214,12 @@
         <span class="pl-2">S/ {{courses.pricePromotional.toFixed(2) }}</span>
       </button>
     </div>
-    <div class="w-full pt-5 px-20 pb-5 flex justify-center items-center" *ngIf="courses.price == courses.pricePromotional">
+    <div class="w-full pt-5 px-10 pb-5 flex justify-center items-center
+      sm:px-16
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price == courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>
@@ -165,15 +232,20 @@
 </div>
 
 <!-- NUESTROS CURSOS -->
-<div class="w-full flex px-32 py-5 items-center">
+<div class="w-full flex px-5 py-5 items-center
+  sm:px-7
+  md:px-10
+  lg:px-16
+  xl:px-24
+  2xl:px-32">
   <span class="flex-1 font-bold text-blue-primary text-2xl">Nuestros cursos</span>
 </div>
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
-  sm:grid-cols-1 sm:px-10
+  sm:grid-cols-1 sm:px-7
   md:grid-cols-2 md:px-10
-  lg:grid-cols-3 lg:px-32
-  xl:grid-cols-4 xl:px-32"
->
+  lg:grid-cols-3 lg:px-16
+  xl:grid-cols-4 xl:px-24
+  2xl:grid-cols-4 2xl:px-32">
   <div
     class="max-h-[550px] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden"
     *ngFor="let courses of coursesData; let i = index"
@@ -213,7 +285,12 @@
     <div class="w-full pt-5 pb-2 flex justify-center line-through text-red-800" *ngIf="courses.price != courses.pricePromotional">
       S/ {{ courses.price.toFixed(2) }}
     </div>
-    <div class="w-full px-20 pb-5 flex justify-center items-center" *ngIf="courses.price != courses.pricePromotional">
+    <div class="w-full px-14 pb-5 flex justify-center items-center
+      sm:px-20
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price != courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>
@@ -222,7 +299,12 @@
         <span class="pl-2">S/ {{courses.pricePromotional.toFixed(2) }}</span>
       </button>
     </div>
-    <div class="w-full pt-5 px-20 pb-5 flex justify-center items-center" *ngIf="courses.price == courses.pricePromotional">
+    <div class="w-full pt-5 px-14 pb-5 flex justify-center items-center
+      sm:px-16
+      md:px-14
+      lg:px-10
+      xl:px-5
+      2xl:px-14" *ngIf="courses.price == courses.pricePromotional">
       <button class="w-full px-5 py-2 flex items-center justify-center bg-sky-blue-extra rounded-md text-white text-xl font-semibold hover:bg-sky-blue-hover  transition-all duration-300">
         <svg class="w-6 h-6 fill-white" viewBox="0 0 24 24">
           <path d="M16 8.75C15.59 8.75 15.25 8.41 15.25 8V4.5C15.25 3.42 14.58 2.75 13.5 2.75H10.5C9.42 2.75 8.75 3.42 8.75 4.5V8C8.75 8.41 8.41 8.75 8 8.75C7.59 8.75 7.25 8.41 7.25 8V4.5C7.25 2.59 8.59 1.25 10.5 1.25H13.5C15.41 1.25 16.75 2.59 16.75 4.5V8C16.75 8.41 16.41 8.75 16 8.75Z"/>

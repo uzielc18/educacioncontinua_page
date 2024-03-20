@@ -1,12 +1,26 @@
+import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule, NgClass } from '@angular/common';
 import { Component } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'header-component',
   templateUrl: './header.components.html',
-  standalone: true,
-  imports: [NgClass, CommonModule, AppRoutingModule],
+  // standalone: true,
+  // imports: [NgClass, CommonModule, AppRoutingModule, BrowserModule],
+  animations: [
+    trigger('fadeInOut', [
+      transition(':enter', [
+        style({ opacity: 0, transform: 'scale(0.5)' }),
+        animate('1.0s ease-out', style({ opacity: 1, transform: 'scale(1)' })), //ease-out
+      ]),
+      transition(':leave', [
+        style({ transform: 'translateX(0)' }),
+        animate('0.3s ease-out', style({ opacity: 0, transform: 'scale(1)' })), //ease-out
+      ]),
+    ]),
+  ]
 })
 export class HeaderComponent {
   itemsHeader = [

@@ -21,13 +21,23 @@ import { PlataformsComponent } from './modules/home/pages/plataforms/plataforms.
 import { VideoInstructivoComponent } from './modules/home/pages/video/video-instructivo.components';
 import { SuccessStoriesComponent } from './modules/home/pages/stories/success-stories.components';
 import { EventsComponent } from './modules/home/pages/events/events.components';
+import { AccordionComponent } from './shared/components/accordion/accordion.components';
+import { CheckBoxComponent } from './shared/components/checkbox/checkbox.components';
+import { SelectComponent } from './shared/components/select/select.components';
+import { FiltersComponents } from './modules/list-courses/pages/filters/filters.components';
+import { ListCoursesFiltersComponent } from './modules/list-courses/pages/courses/list-couses-filters.components';
 
 // SWIPER JS
 register();
 //
 
 @NgModule({
-  declarations: [AppComponent, HomePageComponent, ListOfCoursesComponent],
+  declarations: [
+    AppComponent,
+    HeaderComponent,
+    HomePageComponent,
+    ListOfCoursesComponent,
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -35,18 +45,25 @@ register();
     HttpClientModule,
     FormsModule,
 
-    //  COMPONENTS STAND ALONE
-    HeaderComponent,
+    //  COMPONENTS STAND ALONE HOME PAGE
     SwiperCarrusel,
     CoursesComponents,
-    CourseContainer,
     PlataformsComponent,
     VideoInstructivoComponent,
     SuccessStoriesComponent,
+    NewsPage,
     EventsComponent,
     FooterComponent,
-    NewsPage,
-    //
+
+    // COMPONENTS STAND ALONE COURSES PAGE
+    FiltersComponents,
+    ListCoursesFiltersComponent,
+
+    // COMPONENTS STAND ALONE GENERALS
+    CourseContainer,
+    AccordionComponent,
+    CheckBoxComponent,
+    SelectComponent,
   ],
   providers: [],
   bootstrap: [AppComponent],
