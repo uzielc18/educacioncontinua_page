@@ -1,10 +1,10 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-
         // COLORS PRIMARY UPeU
         'blue-primary': '#003865',
         'hellow-primary': '#F7A701',
