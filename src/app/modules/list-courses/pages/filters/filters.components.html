@@ -1,6 +1,15 @@
 <div class="w-full">
-  <accordion-component></accordion-component>
-  <accordion-component></accordion-component>
-  <accordion-component></accordion-component>
-  <accordion-component></accordion-component>
+  <accordion-component [nameTitle]="categoriesFilter.name">
+    <div class="w-full" *ngFor="let filterItems of categoriesFilter.categories">
+      <checkbox-component [idCheckBox]="filterItems.name" [nameItem]="filterItems.name" [quantity]="filterItems.quantity.toString()"></checkbox-component>
+    </div>
+  </accordion-component>
+</div>
+
+<div class="w-full" *ngFor="let filter of filters">
+  <accordion-component [nameTitle]="filter.name">
+    <div class="w-full" *ngFor="let filterItems of filter.categories">
+      <checkbox-component [idCheckBox]="filterItems.name" [nameItem]="filterItems.name"></checkbox-component>
+    </div>
+  </accordion-component>
 </div>

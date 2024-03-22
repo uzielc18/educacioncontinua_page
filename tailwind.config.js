@@ -19,6 +19,9 @@ module.exports = {
         'red-came-extra': '#861239',
         'sky-blue-extra': '#008DFF',
         'black-extra': '#1E1E1E',
+
+        // COLORS SELECTS
+        'blue-select': '#2563EB',
       },
       fontFamily: {
         montserrat: ['Montserrat'],

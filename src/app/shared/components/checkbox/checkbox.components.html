@@ -1,0 +1,11 @@
+<div class="w-full flex items-center pb-5 font-light">
+  <div class="flex flex-1 items-center">
+    <input class="w-5 h-5 bg-gray-100 border-gray-300 rounded focus:ring-white" [id]="idCheckBox" type="checkbox" value=""/>
+    <label class="ms-4 w-full text-lg truncate" [for]="idCheckBox">
+      {{ nameItem }}
+    </label>
+  </div>
+  <div class="pl-3">
+    <span class="text-lg" *ngIf="quantity != ''">({{ quantity }})</span>
+  </div>
+</div>

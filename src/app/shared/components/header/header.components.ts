@@ -1,7 +1,8 @@
 import { animate, style, transition, trigger } from '@angular/animations';
 import { CommonModule, NgClass } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { Router } from '@angular/router';
 import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
@@ -20,17 +21,22 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
         animate('0.3s ease-out', style({ opacity: 0, transform: 'scale(1)' })), //ease-out
       ]),
     ]),
-  ]
+  ],
 })
-export class HeaderComponent {
+export class HeaderComponent implements OnInit {
   itemsHeader = [
     { name: 'Inicio', page: '/', active: true },
     { name: 'Cursos', page: '/list-of-courses', active: false },
+    { name: 'Programas', page: '/programs', active: false },
     { name: 'Noticias', page: '/', active: false },
     { name: 'Eventos', page: '/', active: false },
   ];
 
-  constructor() {}
+  constructor(private router: Router) {
+  }
+
+  ngOnInit(): void {
+  }
 
   nextPage(page: string) {
     this.itemsHeader = this.itemsHeader.map((item) => {

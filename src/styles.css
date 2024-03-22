@@ -44,6 +44,18 @@ body {
   src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
 }
 
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 300;
+  src: url('./assets/fonts/Montserrat-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 200;
+  src: url('./assets/fonts/Montserrat-ExtraLight.ttf') format('truetype');
+}
+
 /* :root {
   Aqui van cosas globales
 } */
