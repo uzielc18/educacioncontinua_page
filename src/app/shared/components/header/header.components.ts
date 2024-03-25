@@ -1,9 +1,5 @@
 import { animate, style, transition, trigger } from '@angular/animations';
-import { CommonModule, NgClass } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { Router } from '@angular/router';
-import { AppRoutingModule } from 'src/app/app-routing.module';
 
 @Component({
   selector: 'header-component',
@@ -24,6 +20,8 @@ import { AppRoutingModule } from 'src/app/app-routing.module';
   ],
 })
 export class HeaderComponent implements OnInit {
+  isDarkMode: boolean = false;
+
   itemsHeader = [
     { name: 'Inicio', page: '/', active: true },
     { name: 'Cursos', page: '/list-of-courses', active: false },
@@ -32,11 +30,9 @@ export class HeaderComponent implements OnInit {
     { name: 'Eventos', page: '/', active: false },
   ];
 
-  constructor(private router: Router) {
-  }
+  constructor() {}
 
-  ngOnInit(): void {
-  }
+  ngOnInit(): void {}
 
   nextPage(page: string) {
     this.itemsHeader = this.itemsHeader.map((item) => {

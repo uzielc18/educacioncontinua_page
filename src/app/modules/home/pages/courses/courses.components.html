@@ -29,11 +29,11 @@
       xl:col-span-5
       2xl:col-span-3"></select-component>
     <div class="flex items-center justify-center">
-      <button class="w-full px-10 py-2 bg-hellow-primary rounded-lg text-white shadow-lg hover:bg-hellow-hover transition-all duration-300">Filtrar</button>
+      <button class="w-full px-10 py-2 bg-default-hellow-primary rounded-lg text-default-white-primary shadow-lg hover:bg-default-hellow-hover transition-all duration-300">Filtrar</button>
     </div>
   </div>
   <!-- <div class="pl-5">
-    <button class="w-full px-10 py-2 bg-hellow-primary rounded-lg text-white shadow-lg hover:bg-hellow-hover transition-all duration-300">Filtrar</button>
+    <button class="w-full px-10 py-2 bg-default-hellow-primary rounded-lg text-default-white-primary shadow-lg hover:bg-default-hellow-hover transition-all duration-300">Filtrar</button>
   </div> -->
 </div>
 
@@ -44,8 +44,9 @@
   lg:px-16
   xl:px-24
   2xl:px-32">
-  <span class="flex-1 font-bold text-blue-primary text-2xl">Cursos agregados en los últimos días</span>
-  <span class="text-blue-primary cursor-pointer transition-all duration-300 hover:text-hellow-hover">Ver lo mas nuevo</span>
+  <span class="flex-1 font-bold text-default-blue-primary text-2xl dark:text-dark-white-primary transition-colors duration-500 ">Cursos agregados en los últimos días</span>
+  <span class="text-default-blue-primary cursor-pointer transition-all duration-300 hover:text-default-hellow-hover
+  dark:text-dark-white-primary dark:hover:text-default-hellow-hover">Ver lo mas nuevo</span>
 </div>
 
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
@@ -68,12 +69,12 @@
     </course-container>
   </div>
   <!--<div
-    class="max-h-[550px] bg-white rounded-2xl shadow-xl flex flex-col overflow-hidden"
+    class="max-h-[550px] bg-default-white-primary rounded-2xl shadow-xl flex flex-col overflow-hidden"
     *ngFor="let courses of coursesData; let i = index">
     <div class="w-full h-14 px-4 flex items-center justify-between">
       <div class="flex">
         <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
-          <svg class="w-5 h-5" viewBox="0 0 20 20" [ngClass]="{ 'fill-hellow-primary': calification <= courses.calification, 'fill-gray-300': calification > courses.calification }">
+          <svg class="w-5 h-5" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= courses.calification, 'fill-gray-300': calification > courses.calification }">
             <path
               d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
           </svg>
@@ -81,8 +82,8 @@
       </div>
       <div>
         <span *ngIf="courses.price != courses.pricePromotional" class="pr-2 line-through text-red-800">S/{{courses.price.toFixed(2)}}</span>
-        <span *ngIf="courses.price != courses.pricePromotional" class="text-[25px] text-blue-primary font-semibold">S/{{courses.pricePromotional.toFixed(2)}}</span>
-        <span *ngIf="courses.price == courses.pricePromotional" class="text-[25px] text-blue-primary font-semibold">S/{{courses.price.toFixed(2)}}</span>
+        <span *ngIf="courses.price != courses.pricePromotional" class="text-[25px] text-default-blue-primary font-semibold">S/{{courses.pricePromotional.toFixed(2)}}</span>
+        <span *ngIf="courses.price == courses.pricePromotional" class="text-[25px] text-default-blue-primary font-semibold">S/{{courses.price.toFixed(2)}}</span>
       </div>
     </div>
   </div>-->
@@ -95,8 +96,9 @@
   lg:px-16
   xl:px-24
   2xl:px-32">
-  <span class="flex-1 font-bold text-blue-primary text-2xl">Próximamente</span>
-  <span class="text-blue-primary cursor-pointer transition-all duration-300 hover:text-hellow-hover">Ver próximos cursos</span>
+  <span class="flex-1 font-bold text-default-blue-primary text-2xl dark:text-dark-white-primary transition-colors duration-500 ">Próximamente</span>
+  <span class="text-blue-primary cursor-pointer transition-all duration-300 hover:text-default-hellow-hover
+   dark:text-dark-white-primary dark:hover:text-default-hellow-hover">Ver próximos cursos</span>
 </div>
 
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
@@ -127,7 +129,8 @@
   lg:px-16
   xl:px-24
   2xl:px-32">
-  <span class="flex-1 font-bold text-blue-primary text-2xl">Nuestros cursos</span>
+  <span class="flex-1 font-bold text-default-blue-primary text-2xl transition-colors duration-500
+   dark:text-dark-white-primary">Todos nuestros cursos</span>
 </div>
 
 <div class="w-full px-5 grid grid-cols-1 gap-10 py-4
@@ -152,9 +155,10 @@
 
 <!--  -->
 <div class="w-full py-14 flex justify-center items-center">
-  <button class="px-10 py-2 flex bg-blue-primary text-white rounded-md hover:bg-blue-hover cursor-pointer transition-all duration-300 text-xl items-center justify-center" routerLink="/list-of-courses">
+  <button class="px-10 py-2 flex bg-default-blue-primary text-default-white-primary rounded-md hover:bg-default-blue-hover cursor-pointer transition-all duration-300 text-xl items-center justify-center
+  dark:bg-dark-blue-primary dark:hover:bg-default-blue-primary" routerLink="/list-of-courses">
     <span class="pr-5"> Ver todos los cursos</span>
-    <svg class="h-6 fill-white" viewBox="0 0 330 330">
+    <svg class="h-6 fill-default-white-primary" viewBox="0 0 330 330">
       <path d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
         s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
         c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>

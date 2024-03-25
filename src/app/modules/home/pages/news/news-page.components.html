@@ -1,5 +1,5 @@
 <div class="w-full flex flex-col justify-center items-center pt-24">
-  <div class="w-full flex justify-center items-center text-5xl font-bold text-blue-primary">
+  <div class="w-full flex justify-center items-center text-5xl font-bold text-default-blue-primary dark:text-dark-white-primary">
     <span>Noticias</span>
   </div>
   <div class="w-full grid grid-cols-1 px-5 pt-16 gap-10 pb-10
@@ -13,9 +13,9 @@
       <div class="min-w-[250px] max-w-[260px] h-[250px]">
         <img class="h-full object-cover" [src]="newItem.image">
       </div>
-      <div class="w-full p-5 flex flex-1 flex-col border-r border-y border-blue-primary rounded-tr-xl rounded-br-xl">
-        <span class="text-2xl font-semibold text-hellow-primary pb-2">{{newItem.title}}</span>
-        <span class="flex-1">{{newItem.description}}</span>
+      <div class="w-full p-5 flex flex-1 flex-col border-r border-y border-default-blue-primary rounded-tr-xl rounded-br-xl">
+        <span class="text-2xl font-semibold text-default-hellow-primary pb-2">{{newItem.title}}</span>
+        <span class="flex-1 text-black dark:text-dark-white-primary">{{newItem.description}}</span>
         <div class="w-full flex justify-between items-center">
           <div class="flex items-center justify-center text-gray-400">
             <svg class="w-5 h-5 fill-gray-400" viewBox="0 0 24 24">
@@ -32,15 +32,15 @@
             </svg>
             <span class="px-2">{{ newItem.hora }}</span>
           </div>
-          <span class="cursor-pointer text-blue-hover text-[16px] hover:text-hellow-primary transition-all duration-300">Saber más</span>
+          <span class="cursor-pointer text-default-blue-hover text-[16px] hover:text-default-hellow-primary transition-all duration-300 dark:text-dark-white-primary dark:hover:text-dark-hellow-primary">Saber más</span>
         </div>
       </div>
     </div>
   </div>
   <div class="pt-8 pb-16 flex items-center justify-center">
-    <button class="px-10 py-3 bg-hellow-primary text-white text-xl rounded-md shadow-lg hover:bg-hellow-hover transition-all duration-300 flex items-center justify-center">
+    <button class="px-10 py-3 bg-default-hellow-primary text-default-white-primary text-xl rounded-md shadow-lg hover:bg-default-hellow-hover transition-all duration-300 flex items-center justify-center">
       <span class="pr-5">Ver todas las noticias</span>
-      <svg class="h-6 fill-white" viewBox="0 0 330 330">
+      <svg class="h-6 fill-default-white-primary" viewBox="0 0 330 330">
         <path d="M15,180h263.787l-49.394,49.394c-5.858,5.857-5.858,15.355,0,21.213C232.322,253.535,236.161,255,240,255
           s7.678-1.465,10.606-4.394l75-75c5.858-5.857,5.858-15.355,0-21.213l-75-75c-5.857-5.857-15.355-5.857-21.213,0
           c-5.858,5.857-5.858,15.355,0,21.213L278.787,150H15c-8.284,0-15,6.716-15,15S6.716,180,15,180z"/>
