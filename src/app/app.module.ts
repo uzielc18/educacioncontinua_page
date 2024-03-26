@@ -27,6 +27,7 @@ import { SelectComponent } from './shared/components/select/select.components';
 import { FiltersComponents } from './modules/list-courses/pages/filters/filters.components';
 import { ListCoursesFiltersComponent } from './modules/list-courses/pages/courses/list-couses-filters.components';
 import { ModeThemesComponent } from './shared/components/toggles/toggle-mode/modes-themes.components';
+import { ViewCoursesComponent } from './modules/view-courses/view-courses.components';
 
 // SWIPER JS
 register();
@@ -38,6 +39,7 @@ register();
     HeaderComponent,
     HomePageComponent,
     ListOfCoursesComponent,
+    ViewCoursesComponent,
   ],
   imports: [
     BrowserModule,
@@ -59,6 +61,9 @@ register();
     // COMPONENTS STAND ALONE COURSES PAGE
     FiltersComponents,
     ListCoursesFiltersComponent,
+
+    // COMPONENTS STAND ALONE VIEW OF COURSES
+
 
     // COMPONENTS STAND ALONE GENERALS
     CourseContainer,

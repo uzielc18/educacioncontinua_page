@@ -1,5 +1,6 @@
 import { CommonModule, NgClass } from '@angular/common';
 import { Component, Input } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'course-container',
@@ -17,5 +18,13 @@ export class CourseContainer {
   @Input() price: number = 0;
   @Input() pricePromotional: number = 0;
 
-  constructor() {}
+  constructor(
+    private router: Router,
+  ) {}
+
+  viewOfACourses() {
+    const title = this.title.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+    const encodedTittleCourse = encodeURIComponent(title.replace(/ /g, "-"));
+    this.router.navigate(['/view-of-a-course', encodedTittleCourse]);
+  }
 }

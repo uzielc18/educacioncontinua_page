@@ -21,6 +21,7 @@ module.exports = {
           'red-came-extra': '#861239',
           'sky-blue-extra': '#008DFF',
           'black-extra': '#1E1E1E',
+          'gray-background': '#E7E7E7',
 
           // COLORS SELECTS
           'blue-select': '#2563EB',
