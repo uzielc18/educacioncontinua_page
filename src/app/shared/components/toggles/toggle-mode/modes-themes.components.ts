@@ -107,22 +107,27 @@ export class ModeThemesComponent implements OnInit {
     const savedTheme = localStorage.getItem('theme');
 
     if (savedTheme == null) {
-      document.documentElement.classList.add('dark');
-      localStorage.setItem('theme', 'dark');
-    }
+      this.isDarkMode = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
 
-    if (savedTheme == 'dark') {
+      if (this.isDarkMode) {
+        this.isToggle = 'light';
+        document.documentElement.classList.remove('dark');
+        localStorage.setItem('theme', 'light');
+      } else {
+          this.isToggle = 'dark';
+          document.documentElement.classList.add('dark');
+          localStorage.setItem('theme', 'dark');
+      }
+    } else if (savedTheme == 'dark') {
+      this.isToggle = 'light';
       document.documentElement.classList.remove('dark');
       localStorage.setItem('theme', 'light');
-    } else  if (savedTheme == 'light') {
+    } else if (savedTheme == 'light') {
+      this.isToggle = 'dark';
       document.documentElement.classList.add('dark');
       localStorage.setItem('theme', 'dark');
     }
 
-    this.toggle();
-  }
-
-  toggle() {
-    this.isToggle = this.isToggle === 'light'? 'dark' : 'light';
+    // this.toggle();
   }
 }

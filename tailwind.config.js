@@ -39,6 +39,7 @@ module.exports = {
 
           // COLORS HOVER UPeU
           'hellow-hover': '#E39900',
+          'black-background-select-hover': '#1B2234',
 
           // COLORS EXTRAS
           'gray-extra': '#ACACAC',

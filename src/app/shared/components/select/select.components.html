@@ -16,11 +16,11 @@
       />
     </svg>
   </div>
-  <div class="w-full absolute p-5 mt-3 rounded-lg shadow-2xl z-10 bg-default-white-primary" [ngStyle]="{ 'display': dropdownOpen ? 'block' : 'none' }" [class.active]="dropdownOpen">
+  <div class="w-full absolute p-5 mt-3 rounded-lg shadow-2xl z-10 text-black bg-default-white-primary dark:bg-dark-black-background-select" [ngStyle]="{ 'display': dropdownOpen ? 'block' : 'none' }" [class.active]="dropdownOpen">
     <div class="w-full pb-3 relative">
-      <input class="w-full relative pl-[50px] py-[14px] rounded-lg border-gray-300" spellcheck="false" type="text" placeholder="Buscar" [(ngModel)]="searchKeyword" (keyup)="filterCountries()"
+      <input class="w-full relative pl-[50px] py-[14px] rounded-lg border-gray-300 dark:border-none dark:bg-dark-black-background-select-hover" spellcheck="false" type="text" placeholder="Buscar" [(ngModel)]="searchKeyword" (keyup)="filterCountries()"
       />
-      <svg class="w-7 h-7 absolute left-3 top-[13px] fill-gray-300" viewBox="0 0 24 24">
+      <svg class="w-7 h-7 absolute left-3 top-[13px] fill-gray-300 dark:fill-gray-600" viewBox="0 0 24 24">
         <path
           d="M11.01 20.02C15.9861 20.02 20.02 15.9861 20.02 11.01C20.02 6.03391 15.9861 2 11.01 2C6.03391 2 2 6.03391 2 11.01C2 15.9861 6.03391 20.02 11.01 20.02Z"
         />
@@ -31,11 +31,11 @@
     </div>
     <ul class="max-h-[344px] overflow-scroll">
       <li
-        class="flex items-center cursor-pointer h-12 px-3 text-lg rounded-md text-default-blue-primary hover:bg-slate-100" (click)="updateselectedItem('Seleccione una opción')">
+        class="flex items-center cursor-pointer h-12 px-3 text-lg rounded-md text-default-blue-primary hover:bg-slate-100 dark:text-dark-white-primary dark:hover:bg-dark-black-background-select-hover" (click)="updateselectedItem('Seleccione una opción')">
         Seleccione una opción
       </li>
       <li
-        class="flex items-center cursor-pointer h-12 px-3 text-lg rounded-md text-default-blue-primary hover:bg-slate-100"
+        class="flex items-center cursor-pointer h-12 px-3 text-lg rounded-md text-default-blue-primary hover:bg-slate-100 dark:text-dark-white-primary dark:hover:bg-dark-black-background-select-hover"
         *ngFor="let country of filteredCountries"
         (click)="updateselectedItem(country)"
         [class.selected]="country === selectedItem">

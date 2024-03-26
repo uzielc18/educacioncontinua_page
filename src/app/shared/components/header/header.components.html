@@ -1,24 +1,50 @@
 <main class="flex flex-col h-screen w-screen">
-  <div class="w-full bg-default-blue-primary dark:bg-dark-blue-background-primary h-20 flex flex-row gap-16 px-5 text-default-white-primary justify-center overflow-hidden fixed z-20 transition-colors duration-500 ">
-    <div class="h-full flex items-center pl-5
-    sm:pl-7
-    md:pl-10
-    lg:pl-14
-    xl:pl-24
-    2xl:pl-24">LOGITO AQUI</div>
-    <div class="flex-1 flex justify-end items-center min-h-full max-h-full">
-      <mode-themes-component></mode-themes-component>
-      <div class="font-normal" *ngFor="let item of itemsHeader">
-        <div class="w-auto h-auto px-5 flex flex-col items-center">
-          <div *ngIf="item.active" class="w-full h-[4.5px] bg-default-hellow-primary rounded-full" [@fadeInOut]></div>
-          <div class="px-2 pt-1" >
-            <span class="cursor-pointer hover:text-default-hellow-primary transition-all duration-300" [ngClass]="{ 'text-default-hellow-primary': item.active, 'font-medium': item.active }" [routerLink]="[item.page]" routerLinkActive="router-link-active" (click)="nextPage(item.name)">{{ item.name }}</span>
+  <div class="w-full bg-default-blue-primary dark:bg-dark-blue-background-primary h-20 flex flex-row gap-5 text-default-white-primary justify-between overflow-hidden fixed z-20 transition-colors duration-500
+    sm:gap-5
+    md:gap-7
+    lg:gap-10
+    xl:gap-14
+    2xl:gap-16">
+
+    <div class="w-auto h-full flex items-center pl-5
+      sm:pl-7
+      md:pl-10
+      lg:pl-16
+      xl:pl-24
+      2xl:pl-32">
+      <span class="w-max">LOGUITO AQUI</span>
+    </div>
+
+    <div class="w-full hidden lg:block xl:block 2xl:block">
+      <div class="flex-1 flex justify-end items-center min-h-full max-h-full">
+        <mode-themes-component></mode-themes-component>
+        <div class="font-normal" *ngFor="let item of itemsHeader">
+          <div class="w-auto h-auto px-5 flex flex-col items-center">
+            <div *ngIf="item.active" class="w-full h-[4.5px] bg-default-hellow-primary rounded-full" [@fadeInOut]></div>
+            <div class="px-2 pt-1" >
+              <span class="cursor-pointer hover:text-default-hellow-primary transition-all duration-300" [ngClass]="{ 'text-default-hellow-primary': item.active, 'font-medium': item.active }" [routerLink]="[item.page]" routerLinkActive="router-link-active" (click)="nextPage(item.name)">{{ item.name }}</span>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class="flex items-center">
-      <button class="bg-default-hellow-primary px-4 py-1 rounded-[5px] cursor-pointer inline-flex items-center
+
+    <div class="w-full block lg:hidden xl:hidden 2xl:hidden">
+      <div class="h-full flex items-center justify-center">
+        <mode-themes-component></mode-themes-component>
+        <!-- <svg class="w-9 h-9 fill-default-white-primary cursor-pointer hover:" viewBox="0 0 24 24">
+          <path d="M16.19 2H7.81C4.17 2 2 4.17 2 7.81V16.18C2 19.83 4.17 22 7.81 22H16.18C19.82 22 21.99 19.83 21.99 16.19V7.81C22 4.17 19.83 2 16.19 2ZM17 17.25H7C6.59 17.25 6.25 16.91 6.25 16.5C6.25 16.09 6.59 15.75 7 15.75H17C17.41 15.75 17.75 16.09 17.75 16.5C17.75 16.91 17.41 17.25 17 17.25ZM17 12.75H7C6.59 12.75 6.25 12.41 6.25 12C6.25 11.59 6.59 11.25 7 11.25H17C17.41 11.25 17.75 11.59 17.75 12C17.75 12.41 17.41 12.75 17 12.75ZM17 8.25H7C6.59 8.25 6.25 7.91 6.25 7.5C6.25 7.09 6.59 6.75 7 6.75H17C17.41 6.75 17.75 7.09 17.75 7.5C17.75 7.91 17.41 8.25 17 8.25Z"/>
+        </svg> -->
+      </div>
+    </div>
+
+    <div class="flex items-center pr-5
+      sm:pr-7
+      md:pr-10
+      lg:pr-16
+      xl:pr-24
+      2xl:pr-32">
+      <button class="w-max bg-default-hellow-primary px-4 py-1 rounded-[5px] cursor-pointer inline-flex items-center
        hover:bg-default-hellow-hover transition-all duration-300 font-medium">
         <svg class="fill-default-white-primary w-5 mr-2" viewBox="0 0 24 24" >
           <path d="M22 4.84969V16.7397C22 17.7097 21.21 18.5997 20.24 18.7197L19.93 18.7597C18.29 18.9797 15.98 19.6597 14.12 20.4397C13.47 20.7097 12.75 20.2197 12.75 19.5097V5.59969C12.75 5.22969 12.96 4.88969 13.29 4.70969C15.12 3.71969 17.89 2.83969 19.77 2.67969H19.83C21.03 2.67969 22 3.64969 22 4.84969Z"/>
@@ -27,6 +53,7 @@
         <span>Aula virtual</span>
       </button>
     </div>
+
   </div>
 
   <div class="flex-1 mt-20">
