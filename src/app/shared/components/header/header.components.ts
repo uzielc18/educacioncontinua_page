@@ -1,4 +1,4 @@
-import { animate, style, transition, trigger } from '@angular/animations';
+import { animate, state, style, transition, trigger } from '@angular/animations';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -15,6 +15,17 @@ import { Component, OnInit } from '@angular/core';
       transition(':leave', [
         style({ transform: 'translateX(0)' }),
         animate('0.3s ease-out', style({ opacity: 0, transform: 'scale(1)' })), //ease-out
+      ]),
+    ]),
+
+    trigger('moveTop', [
+      transition(':enter', [
+        style({ transform: 'translateY(-100%)' }),
+        animate('1s ease-out', style({ transform: 'translateY(0)' })),
+      ]),
+      transition(':leave', [
+        style({ transform: 'translateY(100%)' }),
+        animate('1s ease-out', style({ transform: 'translateY(0)' })),
       ]),
     ]),
   ],

@@ -1,32 +1,72 @@
-<div class="w-full h-full bg-default-gray-background px-0 pb-32
+<div class="relative w-full h-full bg-default-gray-background-extra px-0 pb-32 dark:bg-dark-blue-background-primary transition-colors duration-500
   sm:px-0
   md:px-5
   lg:px-10
   xl:px-24
   2xl:px-32">
-  <div class="w-full h-full bg-default-white-primary rounded-b-md shadow-lg flex flex-col items-center justify-center">
-    <div class="w-full max-h-[450px] relative flex items-center">
+  <div class="w-full h-full bg-default-white-primary rounded-b-md shadow-lg flex flex-col items-center justify-center dark:bg-dark-blue-background-primary transition-colors duration-500
+    sm:dark:bg-dark-blue-background-primary
+    md:dark:bg-dark-blue-primary
+    lg:dark:bg-dark-blue-primary
+    xl:dark:bg-dark-blue-primary
+    2xl:dark:bg-dark-blue-primary">
+    <div class="w-full max-h-[450px] relative flex items-center justify-center">
       <div class="w-full h-full overflow-hidden bg-black">
         <img class="w-full h-full object-cover opacity-50" src="https://img.freepik.com/foto-gratis/configuracion-juegos-angulo-alto-interiores_23-2149829123.jpg?t=st=1711489581~exp=1711493181~hmac=5138739496b86370b89e092e6061b3518422092b982417a315a4c567ca2c7249&w=1380">
       </div>
-      <div class="absolute right-20 max-w-[530px] text-right">
-        <span class="text-5xl font-bold text-default-white-primary">Creación de una aplicacion utilizando flutter y chatGPT</span>
+      <div class="absolute px-5 max-w-[570px] text-center
+      sm:text-center
+      md:text-center
+      lg:text-center
+      xl:text-center
+      2xl:text-center">
+        <span class=" relative text-3xl font-bold text-default-white-primary transition-colors duration-500
+          sm:text-3xl
+          md:text-4xl
+          lg:text-4xl
+          xl:text-5xl
+          2xl:text-5xl">Creación de una aplicacion utilizando flutter y chatGPT</span>
       </div>
     </div>
-    <div class="w-full h-full p-10">
-      <div class="grid grid-cols-3 gap-10">
-        <div class="w-full col-span-2">
+    <div class="w-full h-full p-10 relative
+      sm:px-6
+      md:px-7
+      lg:px-8
+      xl:px-9
+      2xl:px-10">
+      <div class="grid grid-cols-1 gap-10
+        sm:grid-cols-1
+        md:grid-cols-1
+        lg:grid-cols-2
+        xl:grid-cols-3
+        2xl:grid-cols-3">
+        <div class="w-full col-span-1
+          sm:col-span-1
+          md:col-span-1
+          lg:col-span-1
+          xl:col-span-2
+          2xl:col-span-2">
 
           <div class="w-full pb-8">
-            <span class="text-black font-semibold text-3xl">Descripción</span>
+            <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Descripción</span>
           </div>
 
-          <div class="w-full pl-5 pb-8">
-            <span class="text-justify text-lg">La robótica es un campo de la ciencia en el que se usan máquinas que realizan tareas basándose en programas y algoritmos predeterminados y adaptables, de forma automática o semiautomática.</span>
+          <div class="w-full pl-0 pb-8
+            sm:pl-0
+            md:pl-0
+            lg:pl-5
+            xl:pl-5
+            2xl:pl-5">
+            <p class="text-justify text-lg text-black dark:text-dark-white-primary transition-colors duration-500">La robótica es un campo de la ciencia en el que se usan máquinas que realizan tareas basándose en programas y algoritmos predeterminados y adaptables, de forma automática o semiautomática.</p>
           </div>
 
-          <div class="w-full flex justify-between items-center pb-12">
-            <div class="flex">
+          <div class="relative w-full flex gap-5 justify-between items-center pb-12 flex-col
+            sm:flex-col
+            md:flex-col
+            lg:flex-row
+            xl:flex-row
+            2xl:flex-row">
+            <div class="flex relative">
               <div class="flex pr-10 items-center">
                 <svg class="w-7 h-7 fill-default-blue-primary dark:fill-dark-hellow-primary transition-colors duration-500 " viewBox="0 0 24 24">
                   <path d="M8.25 5.75C7.84 5.75 7.5 5.41 7.5 5V2C7.5 1.59 7.84 1.25 8.25 1.25C8.66 1.25 9 1.59 9 2V5C9 5.41 8.66 5.75 8.25 5.75Z"/>
@@ -35,7 +75,7 @@
                   <path d="M11.9994 17.0006C12.629 17.0006 13.1394 16.5842 13.1394 16.0706C13.1394 15.557 12.629 15.1406 11.9994 15.1406C11.3698 15.1406 10.8594 15.557 10.8594 16.0706C10.8594 16.5842 11.3698 17.0006 11.9994 17.0006Z"/>
                   <path d="M19.57 4.5C18.91 4.01 17.96 4.48 17.96 5.31V5.41C17.96 6.58 17.12 7.66 15.95 7.78C14.6 7.92 13.46 6.86 13.46 5.54V4.5C13.46 3.95 13.01 3.5 12.46 3.5H11.54C10.99 3.5 10.54 3.95 10.54 4.5V5.54C10.54 6.33 10.13 7.03 9.51 7.42C9.42 7.48 9.32 7.53 9.22 7.58C9.13 7.63 9.03 7.67 8.92 7.7C8.8 7.74 8.67 7.77 8.53 7.78C8.37 7.8 8.21 7.8 8.05 7.78C7.91 7.77 7.78 7.74 7.66 7.7C7.56 7.67 7.46 7.63 7.36 7.58C7.26 7.53 7.16 7.48 7.07 7.42C6.44 6.98 6.04 6.22 6.04 5.41V5.31C6.04 4.54 5.22 4.08 4.57 4.41C4.56 4.42 4.55 4.42 4.54 4.43C4.5 4.45 4.47 4.47 4.43 4.5C4.4 4.53 4.36 4.55 4.33 4.58C4.05 4.8 3.8 5.05 3.59 5.32C3.48 5.44 3.39 5.57 3.31 5.7C3.3 5.71 3.29 5.72 3.28 5.74C3.19 5.87 3.11 6.02 3.04 6.16C3.02 6.18 3.01 6.19 3.01 6.21C2.95 6.33 2.89 6.45 2.85 6.58C2.82 6.63 2.81 6.67 2.79 6.72C2.73 6.87 2.69 7.02 2.65 7.17C2.61 7.31 2.58 7.46 2.56 7.61C2.54 7.72 2.53 7.83 2.52 7.95C2.51 8.09 2.5 8.23 2.5 8.37V17.13C2.5 19.82 4.68 22 7.37 22H16.63C19.32 22 21.5 19.82 21.5 17.13V8.37C21.5 6.78 20.74 5.39 19.57 4.5ZM12 18.25C10.45 18.25 9.5 17.48 9.5 16.24C9.5 15.56 9.85 14.97 10.46 14.62C10.02 14.31 9.73 13.85 9.73 13.22C9.73 11.92 10.77 11.25 12 11.25C13.23 11.25 14.26 11.92 14.26 13.22C14.26 13.85 13.98 14.31 13.53 14.62C14.15 14.97 14.5 15.56 14.5 16.24C14.5 17.48 13.54 18.25 12 18.25Z"/>
                 </svg>
-                <span class="pl-2 text-default-blue-primary text-xl">05/03/2024</span>
+                <span class="pl-2 text-default-blue-primary text-xl dark:text-dark-white-primary transition-colors duration-500">05/03/2024</span>
               </div>
               <div class="flex items-center">
                 <svg class="w-7 h-7 fill-default-blue-primary dark:fill-dark-hellow-primary transition-colors duration-500 " viewBox="0 0 24 24">
@@ -45,12 +85,12 @@
                   <path d="M11.9994 17.0006C12.629 17.0006 13.1394 16.5842 13.1394 16.0706C13.1394 15.557 12.629 15.1406 11.9994 15.1406C11.3698 15.1406 10.8594 15.557 10.8594 16.0706C10.8594 16.5842 11.3698 17.0006 11.9994 17.0006Z"/>
                   <path d="M19.57 4.5C18.91 4.01 17.96 4.48 17.96 5.31V5.41C17.96 6.58 17.12 7.66 15.95 7.78C14.6 7.92 13.46 6.86 13.46 5.54V4.5C13.46 3.95 13.01 3.5 12.46 3.5H11.54C10.99 3.5 10.54 3.95 10.54 4.5V5.54C10.54 6.33 10.13 7.03 9.51 7.42C9.42 7.48 9.32 7.53 9.22 7.58C9.13 7.63 9.03 7.67 8.92 7.7C8.8 7.74 8.67 7.77 8.53 7.78C8.37 7.8 8.21 7.8 8.05 7.78C7.91 7.77 7.78 7.74 7.66 7.7C7.56 7.67 7.46 7.63 7.36 7.58C7.26 7.53 7.16 7.48 7.07 7.42C6.44 6.98 6.04 6.22 6.04 5.41V5.31C6.04 4.54 5.22 4.08 4.57 4.41C4.56 4.42 4.55 4.42 4.54 4.43C4.5 4.45 4.47 4.47 4.43 4.5C4.4 4.53 4.36 4.55 4.33 4.58C4.05 4.8 3.8 5.05 3.59 5.32C3.48 5.44 3.39 5.57 3.31 5.7C3.3 5.71 3.29 5.72 3.28 5.74C3.19 5.87 3.11 6.02 3.04 6.16C3.02 6.18 3.01 6.19 3.01 6.21C2.95 6.33 2.89 6.45 2.85 6.58C2.82 6.63 2.81 6.67 2.79 6.72C2.73 6.87 2.69 7.02 2.65 7.17C2.61 7.31 2.58 7.46 2.56 7.61C2.54 7.72 2.53 7.83 2.52 7.95C2.51 8.09 2.5 8.23 2.5 8.37V17.13C2.5 19.82 4.68 22 7.37 22H16.63C19.32 22 21.5 19.82 21.5 17.13V8.37C21.5 6.78 20.74 5.39 19.57 4.5ZM12 18.25C10.45 18.25 9.5 17.48 9.5 16.24C9.5 15.56 9.85 14.97 10.46 14.62C10.02 14.31 9.73 13.85 9.73 13.22C9.73 11.92 10.77 11.25 12 11.25C13.23 11.25 14.26 11.92 14.26 13.22C14.26 13.85 13.98 14.31 13.53 14.62C14.15 14.97 14.5 15.56 14.5 16.24C14.5 17.48 13.54 18.25 12 18.25Z"/>
                 </svg>
-                <span class="pl-2 text-default-blue-primary text-xl">10:40 Am</span>
+                <span class="pl-2 text-default-blue-primary text-xl dark:text-dark-white-primary transition-colors duration-500">10:40 Am</span>
               </div>
             </div>
-            <div class="flex">
+            <div class="flex relative">
               <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
-                <svg class="w-5 h-5" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 3, 'fill-gray-300': calification > 3 }">
+                <svg class="w-5 h-5" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 3, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 3 }">
                   <path
                     d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
                 </svg>
@@ -59,22 +99,347 @@
           </div>
 
           <div class="w-full pb-5">
-            <span class="text-black font-semibold text-3xl">Los conocimientos que aprenderás son</span>
+            <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Los conocimientos que aprenderás son</span>
           </div>
 
-          <div class="w-full p-5">
-            <div class="w-full h-80 border border-default-blue-primary rounded-md"></div>
+          <div class="w-full py-5 px-0
+            sm:px-0
+            md:px-0
+            lg:px-5
+            xl:px-5
+            2xl:px-5">
+            <div class="w-full p-10 border border-default-blue-primary rounded-md dark:border-dark-white-primary">
+              <div class="w-full grid grid-cols-1 gap-5 text-black dark:text-dark-white-primary
+                sm:grid-cols-1
+                md:grid-cols-1
+                lg:grid-cols-2
+                xl:grid-cols-2
+                2xl:grid-cols-2">
+                <div>
+                  Aprenderas a realizar logica con typescript
+                </div>
+                <div>
+                  Aprenderas a realizar logica con typescript
+                </div>
+                <div>
+                  Aprenderas a realizar logica con typescript
+                </div>
+                <div>
+                  Aprenderas a realizar logica con typescript
+                </div>
+                <div>
+                  Aprenderas a realizar logica con typescript
+                </div>
+              </div>
+            </div>
           </div>
 
           <div class="w-full pt-10 pb-5">
-            <span class="text-black font-semibold text-3xl">Comentarios</span>
+            <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Contenido del curso</span>
+          </div>
+
+          <div class="w-full pt-10 pb-5">
+            <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Requisitos fundamentales</span>
+            <div class="w-full px-0 py-7
+              sm:px-0
+              md:px-0
+              lg:px-5
+              xl:px-5
+              2xl:px-5">
+              <div class="grid grid-cols-1 gap-10
+                sm:grid-cols-1
+                md:grid-cols-1
+                lg:grid-cols-1
+                xl:grid-cols-2
+                2xl:grid-cols-2">
+
+
+                <div class="w-full p-5 border  border-default-blue-primary text-black rounded-md dark:text-dark-white-primary dark:border-dark-white-primary flex items-center">
+                  <svg class="w-7 h-7 transform -scale-x-100 fill-default-blue-primary transition-colors duration-500 dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.15 12.83L14.42 13.41C13.94 13.57 13.57 13.94 13.41 14.42L12.83 16.15C12.34 17.64 10.24 17.61 9.78 16.12L7.83 9.84C7.45 8.59 8.6 7.44 9.83 7.82L16.12 9.77C17.61 10.24 17.63 12.34 16.15 12.83Z"/>
+                  </svg>
+                  <span class="pl-4">Tener una laptop de gama media</span>
+                </div>
+
+                <div class="w-full p-5 border  border-default-blue-primary text-black rounded-md dark:text-dark-white-primary dark:border-dark-white-primary flex items-center">
+                  <svg class="w-7 h-7 transform -scale-x-100 fill-default-blue-primary transition-colors duration-500 dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.15 12.83L14.42 13.41C13.94 13.57 13.57 13.94 13.41 14.42L12.83 16.15C12.34 17.64 10.24 17.61 9.78 16.12L7.83 9.84C7.45 8.59 8.6 7.44 9.83 7.82L16.12 9.77C17.61 10.24 17.63 12.34 16.15 12.83Z"/>
+                  </svg>
+                  <span class="pl-4">Tener instalado visual studio code</span>
+                </div>
+
+                <div class="w-full p-5 border  border-default-blue-primary text-black rounded-md dark:text-dark-white-primary dark:border-dark-white-primary flex items-center">
+                  <svg class="w-7 h-7 transform -scale-x-100 fill-default-blue-primary transition-colors duration-500 dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.15 12.83L14.42 13.41C13.94 13.57 13.57 13.94 13.41 14.42L12.83 16.15C12.34 17.64 10.24 17.61 9.78 16.12L7.83 9.84C7.45 8.59 8.6 7.44 9.83 7.82L16.12 9.77C17.61 10.24 17.63 12.34 16.15 12.83Z"/>
+                  </svg>
+                  <span class="pl-4">Instalar la base de datos MongoDB</span>
+                </div>
+
+                <div class="w-full p-5 border  border-default-blue-primary text-black rounded-md dark:text-dark-white-primary dark:border-dark-white-primary flex items-center">
+                  <svg class="w-7 h-7 transform -scale-x-100 fill-default-blue-primary transition-colors duration-500 dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.15 12.83L14.42 13.41C13.94 13.57 13.57 13.94 13.41 14.42L12.83 16.15C12.34 17.64 10.24 17.61 9.78 16.12L7.83 9.84C7.45 8.59 8.6 7.44 9.83 7.82L16.12 9.77C17.61 10.24 17.63 12.34 16.15 12.83Z"/>
+                  </svg>
+                  <span class="pl-4">Descargar la ultima versión de flutter</span>
+                </div>
+
+                <div class="w-full p-5 border  border-default-blue-primary text-black rounded-md dark:text-dark-white-primary dark:border-dark-white-primary flex items-center">
+                  <svg class="w-7 h-7 transform -scale-x-100 fill-default-blue-primary transition-colors duration-500 dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                    <path d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM16.15 12.83L14.42 13.41C13.94 13.57 13.57 13.94 13.41 14.42L12.83 16.15C12.34 17.64 10.24 17.61 9.78 16.12L7.83 9.84C7.45 8.59 8.6 7.44 9.83 7.82L16.12 9.77C17.61 10.24 17.63 12.34 16.15 12.83Z"/>
+                  </svg>
+                  <span class="pl-4">Tener la extensión lengua dart</span>
+                </div>
+
+
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full pb-5">
+            <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Docente Experto</span>
+            <div class="w-full px-0 py-7
+              sm:px-0
+              md:px-0
+              lg:px-5
+              xl:px-5
+              2xl:px-5">
+              <div class="w-full flex flex-row gap-5">
+                <div class="flex-1 flex-col flex justify-between">
+                  <div class="w-full flex items-center">
+                    <svg class="w-5 h-5 fill-default-hellow-primary dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                      <path d="M16.8311 15.6402C17.5011 15.2002 18.3811 15.6802 18.3811 16.4802V17.7702C18.3811 19.0402 17.3911 20.4002 16.2011 20.8002L13.0111 21.8602C12.4511 22.0502 11.5411 22.0502 10.9911 21.8602L7.80109 20.8002C6.60109 20.4002 5.62109 19.0402 5.62109 17.7702V16.4702C5.62109 15.6802 6.50109 15.2002 7.16109 15.6302L9.22109 16.9702C10.0111 17.5002 11.0111 17.7602 12.0111 17.7602C13.0111 17.7602 14.0111 17.5002 14.8011 16.9702L16.8311 15.6402Z"/>
+                      <path d="M19.9795 6.45859L13.9895 2.52859C12.9095 1.81859 11.1295 1.81859 10.0495 2.52859L4.02953 6.45859C2.09953 7.70859 2.09953 10.5386 4.02953 11.7986L5.62953 12.8386L10.0495 15.7186C11.1295 16.4286 12.9095 16.4286 13.9895 15.7186L18.3795 12.8386L19.7495 11.9386V14.9986C19.7495 15.4086 20.0895 15.7486 20.4995 15.7486C20.9095 15.7486 21.2495 15.4086 21.2495 14.9986V10.0786C21.6495 8.78859 21.2395 7.28859 19.9795 6.45859Z"/>
+                    </svg>
+                    <span class="pl-4 text-black text-lg dark:text-dark-white-primary dark:font-extralight">Diego Joel Alor Chavarria</span>
+                  </div>
+                  <div class="w-full flex items-center">
+                    <svg class="w-5 h-5 fill-default-hellow-primary dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                      <path d="M21.091 6.97953C20.241 6.03953 18.821 5.56953 16.761 5.56953H16.521V5.52953C16.521 3.84953 16.521 1.76953 12.761 1.76953H11.241C7.48101 1.76953 7.48101 3.85953 7.48101 5.52953V5.57953H7.24101C5.17101 5.57953 3.76101 6.04953 2.91101 6.98953C1.92101 8.08953 1.95101 9.56953 2.05101 10.5795L2.06101 10.6495L2.13847 11.4628C2.15273 11.6126 2.2334 11.7479 2.35929 11.8303C2.59909 11.9872 3.00044 12.2459 3.24101 12.3795C3.38101 12.4695 3.53101 12.5495 3.68101 12.6295C5.39101 13.5695 7.27101 14.1995 9.18101 14.5095C9.27101 15.4495 9.68101 16.5495 11.871 16.5495C14.061 16.5495 14.491 15.4595 14.561 14.4895C16.601 14.1595 18.571 13.4495 20.351 12.4095C20.411 12.3795 20.451 12.3495 20.501 12.3195C20.8977 12.0953 21.3093 11.819 21.6845 11.5484C21.7975 11.4668 21.8698 11.3408 21.8852 11.2023L21.901 11.0595L21.951 10.5895C21.961 10.5295 21.961 10.4795 21.971 10.4095C22.051 9.39953 22.031 8.01953 21.091 6.97953ZM13.091 13.8295C13.091 14.8895 13.091 15.0495 11.861 15.0495C10.631 15.0495 10.631 14.8595 10.631 13.8395V12.5795H13.091V13.8295ZM8.91101 5.56953V5.52953C8.91101 3.82953 8.91101 3.19953 11.241 3.19953H12.761C15.091 3.19953 15.091 3.83953 15.091 5.52953V5.57953H8.91101V5.56953Z"/>
+                      <path d="M20.8733 13.7349C21.2269 13.5666 21.6342 13.8469 21.5988 14.2369L21.2398 18.1907C21.0298 20.1907 20.2098 22.2307 15.8098 22.2307H8.18984C3.78984 22.2307 2.96984 20.1907 2.75984 18.2007L2.41913 14.4529C2.38409 14.0674 2.78205 13.7874 3.13468 13.947C4.2741 14.4625 6.37724 15.3771 7.67641 15.7174C7.84072 15.7604 7.97361 15.878 8.04556 16.0319C8.65253 17.33 9.96896 18.0207 11.8698 18.0207C13.752 18.0207 15.085 17.3034 15.694 16.0021C15.766 15.8481 15.8991 15.7305 16.0635 15.6873C17.443 15.3243 19.6816 14.3019 20.8733 13.7349Z"/>
+                    </svg>
+                    <span class="pl-4 text-black text-lg dark:text-dark-white-primary dark:font-extralight">Ingenieria de Sistemas</span>
+                  </div>
+                  <div class="w-full flex items-center">
+                    <svg class="w-5 h-5 fill-default-hellow-primary dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                      <path
+                        d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                    </svg>
+                    <span class="pl-4 text-black text-lg dark:text-dark-white-primary dark:font-extralight">5 estrellas</span>
+                  </div>
+                  <div class="w-full flex items-center">
+                    <svg class="w-5 h-5 fill-default-hellow-primary dark:fill-dark-white-primary" viewBox="0 0 24 24">
+                      <path d="M19.0717 19.8211C18.8817 19.8211 18.6917 19.7511 18.5417 19.6011C18.2517 19.3111 18.2517 18.8311 18.5417 18.5411C22.1517 14.9311 22.1517 9.06109 18.5417 5.46109C18.2517 5.17109 18.2517 4.69109 18.5417 4.40109C18.8317 4.11109 19.3117 4.11109 19.6017 4.40109C23.7917 8.59109 23.7917 15.4111 19.6017 19.6011C19.4517 19.7511 19.2617 19.8211 19.0717 19.8211Z"/>
+                      <path d="M4.93031 19.8211C4.74031 19.8211 4.55031 19.7511 4.40031 19.6011C0.210312 15.4111 0.210312 8.59109 4.40031 4.40109C4.69031 4.11109 5.17031 4.11109 5.46031 4.40109C5.75031 4.69109 5.75031 5.17109 5.46031 5.46109C1.85031 9.07109 1.85031 14.9411 5.46031 18.5411C5.75031 18.8311 5.75031 19.3111 5.46031 19.6011C5.31031 19.7511 5.12031 19.8211 4.93031 19.8211Z"/>
+                      <path d="M11.9988 22.7119C10.7488 22.7019 9.55878 22.5019 8.44878 22.1119C8.05878 21.9719 7.84878 21.5419 7.98878 21.1519C8.12878 20.7619 8.54878 20.5519 8.94878 20.6919C9.90878 21.0219 10.9288 21.2019 12.0088 21.2019C13.0788 21.2019 14.1088 21.0219 15.0588 20.6919C15.4488 20.5619 15.8788 20.7619 16.0188 21.1519C16.1588 21.5419 15.9488 21.9719 15.5588 22.1119C14.4388 22.5019 13.2488 22.7119 11.9988 22.7119Z"/>
+                      <path d="M15.2988 3.33906C15.2188 3.33906 15.1288 3.32906 15.0488 3.29906C14.0988 2.95906 13.0688 2.78906 11.9988 2.78906C10.9288 2.78906 9.90878 2.96906 8.94878 3.29906C8.54878 3.42906 8.12878 3.22906 7.98878 2.83906C7.84878 2.44906 8.05878 2.01906 8.44878 1.87906C9.56878 1.48906 10.7588 1.28906 11.9988 1.28906C13.2388 1.28906 14.4388 1.48906 15.5488 1.87906C15.9388 2.01906 16.1488 2.44906 16.0088 2.83906C15.8988 3.14906 15.6088 3.33906 15.2988 3.33906Z"/>
+                      <path d="M8.73828 12.0001V10.3301C8.73828 8.25014 10.2083 7.40014 12.0083 8.44014L13.4583 9.28014L14.9083 10.1201C16.7083 11.1601 16.7083 12.8601 14.9083 13.9001L13.4583 14.7401L12.0083 15.5801C10.2083 16.6201 8.73828 15.7701 8.73828 13.6901V12.0001Z"/>
+                    </svg>
+                    <span class="pl-4 text-black text-lg dark:text-dark-white-primary dark:font-extralight">5 cursos dictados</span>
+                  </div>
+                </div>
+                <div class="w-40 h-40 rounded-full overflow-hidden cursor-pointer">
+                  <img class="w-full h-full object-cover" src="https://mglobalmarketing.es/wp-content/uploads/2022/03/CMS-sistema-de-gestion-de-contenido.jpg">
+                </div>
+              </div>
+              <div class="w-full pt-5">
+                <p class="text-justify text-black font-light transition-colors duration-500 dark:text-dark-white-primary">Diego Joel Alor Chavarría, un apasionado docente, ofrece una educación motivadora centrada en el estudiante. Su enfoque promueve la participación activa y el pensamiento crítico en un entorno de apoyo mutuo.</p>
+                <p class="text-justify pt-3 text-black font-light transition-colors duration-500 dark:text-dark-white-primary">Con una sólida formación académica, Diego Joel busca mejorar constantemente sus métodos pedagógicos a través de la investigación educativa. Además de enseñar, se preocupa por el bienestar integral de sus alumnos, brindándoles orientación y apoyo personalizado.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-full pb-5">
+            <div class="w-full flex items-center justify-between pb-5">
+              <span class="text-black font-semibold text-3xl dark:text-dark-hellow-primary transition-colors duration-500">Comentarios</span>
+              <span class="text-black text-2xl dark:text-dark-white-primary transition-colors duration-500">5</span>
+            </div>
+            <div class="w-full px-0 pt-7 pb-5
+              sm:px-0
+              md:px-0
+              lg:px-5
+              xl:px-5
+              2xl:px-5">
+              <div class="w-full flex flex-col gap-14">
+
+                <div class="w-full flex gap-5">
+                  <div class="w-12 h-12 rounded-full overflow-hidden
+                    sm:w-12 sm:h-12
+                    md:w-12 md:h-12
+                    lg:w-16 lg:h-16
+                    xl:w-16 xl:h-16
+                    2xl:w-16 2xl:h-16">
+                    <img class="w-full h-full object-cover" src="https://news.umanitoba.ca/wp-content/uploads/2019/03/IMG_9991.jpg">
+                  </div>
+                  <div class="flex-1 flex flex-col justify-between">
+                    <div class="w-full">
+                      <div class="w-full flex justify-between">
+                        <span class="font-semibold text-lg text-black dark:text-dark-white-primary transition-colors duration-500">Nadine Lucero Arango Saldaña</span>
+                        <span class="font-light text-md text-dark-gray-extra dark:text-dark-gray-extra transition-colors duration-500 text-right">Hace 3 minutos</span>
+                      </div>
+                      <div class="w-full flex items-center">
+                        <span class="font-light text-md pr-3 text-black dark:text-dark-white-primary text-center  transition-colors duration-500">3</span>
+                        <div class="flex">
+                          <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
+                            <svg class="w-[14px] h-[14px]" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 3, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 3 }">
+                              <path
+                                d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 pt-5">
+                      <p class="text-black dark:text-dark-white-primary transition-colors duration-500 text-justify font-light">Este curso es super genial. Ten enseñan desde lo más básico hasta lo avanzado, incluso algunos trucos como atajos de teclado o cosas que nos ayudan a ser más agíles al momento de codear.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-5">
+                  <div class="w-12 h-12 rounded-full overflow-hidden
+                    sm:w-12 sm:h-12
+                    md:w-12 md:h-12
+                    lg:w-16 lg:h-16
+                    xl:w-16 xl:h-16
+                    2xl:w-16 2xl:h-16">
+                    <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1218375459/photo/i-love-my-job.webp?b=1&s=170667a&w=0&k=20&c=9w8UtTXvLOwN4yzcocWBVEmoa2Pp6g56cthII3az2-I=">
+                  </div>
+                  <div class="flex-1 flex flex-col justify-between">
+                    <div class="w-full">
+                      <div class="w-full flex justify-between">
+                        <span class="font-semibold text-lg text-black dark:text-dark-white-primary transition-colors duration-500">Ruth Ada Chaupe Ochoa</span>
+                        <span class="font-light text-md text-dark-gray-extra dark:text-dark-gray-extra transition-colors duration-500 text-right">Hace 1 hora</span>
+                      </div>
+                      <div class="w-full flex items-center">
+                        <span class="font-light text-md pr-3 text-black dark:text-dark-white-primary text-center transition-colors duration-500">5</span>
+                        <div class="flex">
+                          <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
+                            <svg class="w-[14px] h-[14px]" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 5, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 5 }">
+                              <path
+                                d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 pt-5">
+                      <p class="text-black dark:text-dark-white-primary transition-colors duration-500 text-justify font-light">Este curso es super genial. Ten enseñan desde lo más básico hasta lo avanzado, incluso algunos trucos como atajos de teclado o cosas que nos ayudan a ser más agíles al momento de codear.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-5">
+                  <div class="w-12 h-12 rounded-full overflow-hidden
+                    sm:w-12 sm:h-12
+                    md:w-12 md:h-12
+                    lg:w-16 lg:h-16
+                    xl:w-16 xl:h-16
+                    2xl:w-16 2xl:h-16">
+                    <img class="w-full h-full object-cover" src="https://www.franklin.edu/sites/default/files/styles/related_post/public/fr/back%20to%20college%20blog/main%20images/iStock-485337106%20%281%29.jpg?itok=1jezE6NF">
+                  </div>
+                  <div class="flex-1 flex flex-col justify-between">
+                    <div class="w-full">
+                      <div class="w-full flex justify-between">
+                        <span class="font-semibold text-lg text-black dark:text-dark-white-primary transition-colors duration-500">Fatima Lucia Meza Rivera</span>
+                        <span class="font-light text-md text-dark-gray-extra dark:text-dark-gray-extra transition-colors duration-500 text-right">Hace 12 días</span>
+                      </div>
+                      <div class="w-full flex items-center">
+                        <span class="font-light text-md pr-3 text-black dark:text-dark-white-primary text-center transition-colors duration-500">4</span>
+                        <div class="flex">
+                          <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
+                            <svg class="w-[14px] h-[14px]" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 4, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 4 }">
+                              <path
+                                d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 pt-5">
+                      <p class="text-black dark:text-dark-white-primary transition-colors duration-500 text-justify font-light">Este curso es super genial. Ten enseñan desde lo más básico hasta lo avanzado, incluso algunos trucos como atajos de teclado o cosas que nos ayudan a ser más agíles al momento de codear.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-5">
+                  <div class="w-12 h-12 rounded-full overflow-hidden
+                    sm:w-12 sm:h-12
+                    md:w-12 md:h-12
+                    lg:w-16 lg:h-16
+                    xl:w-16 xl:h-16
+                    2xl:w-16 2xl:h-16">
+                    <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1218375459/photo/i-love-my-job.webp?b=1&s=170667a&w=0&k=20&c=9w8UtTXvLOwN4yzcocWBVEmoa2Pp6g56cthII3az2-I=">
+                  </div>
+                  <div class="flex-1 flex flex-col justify-between">
+                    <div class="w-full">
+                      <div class="w-full flex justify-between">
+                        <span class="font-semibold text-lg text-black dark:text-dark-white-primary transition-colors duration-500">Malena Geraldine Arias Espinoza</span>
+                        <span class="font-light text-md text-dark-gray-extra dark:text-dark-gray-extra transition-colors duration-500 text-right">Hace 1 mes</span>
+                      </div>
+                      <div class="w-full flex items-center">
+                        <span class="font-light text-md pr-3 text-black dark:text-dark-white-primary text-center transition-colors duration-500">3</span>
+                        <div class="flex">
+                          <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
+                            <svg class="w-[14px] h-[14px]" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 3, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 3 }">
+                              <path
+                                d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 pt-5">
+                      <p class="text-black dark:text-dark-white-primary transition-colors duration-500 text-justify font-light">Este curso es super genial. Ten enseñan desde lo más básico hasta lo avanzado, incluso algunos trucos como atajos de teclado o cosas que nos ayudan a ser más agíles al momento de codear.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="w-full flex gap-5">
+                  <div class="w-12 h-12 rounded-full overflow-hidden
+                    sm:w-12 sm:h-12
+                    md:w-12 md:h-12
+                    lg:w-16 lg:h-16
+                    xl:w-16 xl:h-16
+                    2xl:w-16 2xl:h-16">
+                    <img class="w-full h-full object-cover" src="https://media.istockphoto.com/id/1218375459/photo/i-love-my-job.webp?b=1&s=170667a&w=0&k=20&c=9w8UtTXvLOwN4yzcocWBVEmoa2Pp6g56cthII3az2-I=">
+                  </div>
+                  <div class="flex-1 flex flex-col justify-between">
+                    <div class="w-full">
+                      <div class="w-full flex justify-between">
+                        <span class="font-semibold text-lg text-black dark:text-dark-white-primary transition-colors duration-500">Mercy Wendy Polanco Arevalo</span>
+                        <span class="font-light text-md text-dark-gray-extra dark:text-dark-gray-extra transition-colors duration-500 text-right">Hace 1 año</span>
+                      </div>
+                      <div class="w-full flex items-center">
+                        <span class="font-light text-md pr-3 text-black dark:text-dark-white-primary text-center transition-colors duration-500">5</span>
+                        <div class="flex">
+                          <div class="w-auto px-1" *ngFor="let calification of [1, 2, 3, 4, 5]">
+                            <svg class="w-[14px] h-[14px]" viewBox="0 0 20 20" [ngClass]="{ 'fill-default-hellow-primary': calification <= 5, 'fill-gray-300 dark:fill-dark-white-primary transition-colors duration-500': calification > 5 }">
+                              <path
+                                d="M11.7376 1.43603L13.5003 4.96126C13.7378 5.4488 14.3753 5.91133 14.9129 6.01133L18.1006 6.53637C20.1382 6.87389 20.6132 8.34905 19.1506 9.82414L16.663 12.3118C16.2504 12.7243 16.0129 13.5369 16.1504 14.1244L16.863 17.1996C17.4255 19.6248 16.1254 20.5748 13.9878 19.2998L11.0001 17.5246C10.4626 17.1996 9.5625 17.1996 9.02497 17.5246L6.03727 19.2998C3.89957 20.5623 2.59949 19.6248 3.16202 17.1996L3.87457 14.1244C3.98708 13.5244 3.74956 12.7118 3.33703 12.2993L0.849372 9.81164C-0.613223 8.34905 -0.138192 6.87389 1.89944 6.52387L5.08721 5.99883C5.62475 5.91133 6.26229 5.4363 6.4998 4.94876L8.26242 1.42353C9.22498 -0.47659 10.7751 -0.47659 11.7376 1.43603Z"/>
+                            </svg>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="flex-1 pt-5">
+                      <p class="text-black dark:text-dark-white-primary transition-colors duration-500 text-justify font-light">Este curso es super genial. Ten enseñan desde lo más básico hasta lo avanzado, incluso algunos trucos como atajos de teclado o cosas que nos ayudan a ser más agíles al momento de codear.</p>
+                    </div>
+                  </div>
+                </div>
+
+
+              </div>
+            </div>
           </div>
 
         </div>
 
 
-        <div class="w-full col-span-1">
-          <div class="w-full max-h-[700px] bg-default-white-primary shadow-xl rounded-lg overflow-hidden">
+        <div class="w-full h-full col-span-1 relative">
+          <div class="w-full max-h-[900px] bg-default-white-primary shadow-xl rounded-lg overflow-hidden dark:bg-dark-blue-primary transition-colors duration-500
+          sm:dark:bg-dark-blue-primary
+          md:dark:bg-dark-blue-background-primary
+          lg:dark:bg-dark-blue-background-primary
+          xl:dark:bg-dark-blue-background-primary
+          2xl:dark:bg-dark-blue-background-primary">
             <div class="aspect-w-10 aspect-h-5 w-full">
               <iframe class="w-full h-full"
                 src="https://www.youtube.com/embed/tpS5w5tic_U" frameborder="0"
@@ -83,19 +448,27 @@
               </iframe>
             </div>
 
-            <div class="p-5 w-full">
-              <span class="text-2xl font-bold">Obten los mejores cursos</span>
-              <div class="py-5">
-                <p class="text-justify text-xl font-light">Descubre conocimientos que transformarán tu vida. ¡Inscríbete ahora y alcanza tú máximo potencial!</p>
+            <div class="pt-5 px-5 w-full">
+              <span class="text-2xl font-bold text-black dark:text-dark-white-primary transition-colors duration-500">Obten los mejores cursos</span>
+              <div class="pt-5 pb-3">
+                <p class="text-justify text-xl font-light text-black dark:text-dark-white-primary transition-colors duration-500">Descubre conocimientos que transformarán tu vida. ¡Inscríbete ahora y alcanza tú máximo potencial!</p>
               </div>
             </div>
 
-            <div class="px-10 w-full py-5">
-              <div class="w-full h-[2px] rounded-full bg-default-black-extra"></div>
+            <div class="px-32 w-full py-5">
+              <div class="w-full h-[1px] rounded-full bg-default-gray-background-extra dark:bg-dark-blue-primary transition-colors duration-500"></div>
             </div>
 
-            <div>
-              Hola
+            <div class="w-full flex px-5 pt-2 pb-5 justify-center items-end">
+              <span class="text-5xl font-semibold text-default-hellow-primary transition-colors duration-500">S/250.60</span>
+              <span class="text-2xl line-through pl-4 text-default-gray-linear-extra font-light dark:text-dark-white-primary transition-colors duration-500">S/350.60</span>
+            </div>
+
+            <div class="w-full pt-3 px-20 pb-10">
+              <div class="cursor-pointer w-full rounded-lg border py-3 px-5 border-default-blue-primary text-default-blue-primary flex items-center justify-center transition-all duration-200 hover:bg-default-blue-primary hover:text-default-white-primary
+                dark:border-dark-white-primary dark:text-dark-white-primary dark:hover:border-dark-blue-primary dark:hover:bg-dark-blue-primary">
+                <span class="text-lg">Obtener este curso</span>
+              </div>
             </div>
 
           </div>
